@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: #2b2b2b;
+	background-color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.app {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+}
+
+.calculator {
+	box-shadow: -30px 20px 100px 10px #fb184e78, 30px -20px 100px 10px rgba(0, 110, 255, 0.754);
+	padding: 2em 3em;
+	border-radius: 20px;
+	width: 100%;
+	max-width: 400px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5em;
+	align-items: center;
+}
+
+
+.buttons {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.buttons > button {
+	width: 40px;
+	height: 40px;
+	display: block;
+	background-color: #2b2b2b;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 0;
+	/* font-size: 1rem; */
+	cursor: pointer;
+}
+
+.buttons > button:hover {
+	opacity: 0.8;
+}
+
+.result {
+	text-align: center;
+}
+
+input {
+	width: 100%;
+	padding: 0.5em 1em;
+	/* border-radius: 10px; */
+	border: 2px solid #2b2b2b;
+	/* outline: none; */
+	font-size: 1rem;
+    font-family: inherit;
+}
+
+input::placeholder {
+	color: #2b2b2b;
+	font-weight: bold;
+}
+
+.success {
+	color: #0057ff;
+}
+
+.error {
+	color: #fb184e;
+}
